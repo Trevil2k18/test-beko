@@ -8,9 +8,9 @@ use App\Models\User;
 
 class LoginController extends Controller
 {
-    const BANNED_MESSAGE = 'banned_by_ip';
-    const LOGGED_IN = 'logged_in';
-    const INVALID_CREDS = 'invalid_credentials';
+    const BANNED_MESSAGE = 'Banned by IP';
+    const LOGGED_IN = 'Successfully logged in!';
+    const INVALID_CREDS = 'Invalid credentials';
 
     public function login(UserLoginRequest $request)
     {
