@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  mysql:
+    image: percona:latest
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./database/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: testbeko
+      MYSQL_DATABASE: testbeko
+      MYSQL_USER: test
+      MYSQL_PASSWORD: beko
+    restart: always
